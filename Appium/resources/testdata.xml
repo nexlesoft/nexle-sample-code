@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<base>
+	<test classname ='TC001_Login_ClickChangeLink' testname='TC001_login_ClickChangeLink'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC002_Login_PressEnterKey' testname='TC002_Login_pressEnterKey'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC003_Login_ChangeToAnotherCourt' testname='TC003_Login_changeToAnotherCourt'>
+		<parameter name='courtsideID'>40934</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 3 </parameter>
+		<parameter name='newCourtsideID'>38287</parameter>
+		<parameter name='newSetupID'>230788</parameter>
+		<parameter name='newCourtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC004_Login_LoginWithWrongData' testname='TC004_Login_loginWithWrongData'>
+		<parameter name='courtsideID'>40934</parameter>
+		<parameter name='setupID'>230789</parameter>
+		<parameter name='invalidLoginTxt'>Invalid CourtID/SetupID. Please try again!</parameter>
+	</test>
+	<test classname ='TC005_GameList_PageLoadedByDefault' testname='TC005_GameList_pageLoadedByDefault'>
+		<parameter name='courtsideID'>40934</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 3 </parameter>
+	</test>
+	<test classname ='TC006_GameList_ChangeDateFromDropDownList' testname='TC006_GameList_changeDateFromDropDownList'>
+		<parameter name='courtsideID'>40934</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 3 </parameter>
+	</test>
+	<test classname ='TC007_GameList_ManualSyncOfAdmin' testname='TC007_GameList_manualSyncOfAdmin'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC008_GameList_ExportGameFile' testname='TC008_GameList_exportGameFile'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC009_GameList_ClearDataFromSettings' testname='TC009_GameList_ClearDataFrom_Settings'>
+		<parameter name='courtsideID'>40934</parameter>
+		<parameter name='setupID'>230788</parameter>
+	</test>
+	<test classname ='TC010_GameList_NoGameToSync' testname='TC010_GameList_noGameToSync'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC011_GameList_NoGameToEmail' testname='TC011_GameList_noGameToEmail'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC012_TeamSelectionList_PageLoad' testname='TC012_teamSelectionList_PageLoad'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC013_TeamSelectionList_SelectPlayersFromTeamList' testname='TC013_TeamSelectionList_selectPlayersFromTeamList'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC014_TeamSelectionList_RemovePlayersFromPlayingInThisGame' testname='TC014_TeamSelectionList_removePlayersFromPlayingInThisGame'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='addPlayersOfTeam1'>5</parameter>
+		<parameter name='removePlayersOfTeam1'>2</parameter>
+	</test>
+	<test classname ='TC015_TeamSelectionList_AddNewCoach' testname='TC015_TeamSelectionList_addNewCoach'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='firstName'>Coach</parameter>
+		<parameter name='lastName'>Red</parameter>
+		<parameter name='DOB'>13/06/2012</parameter>
+	</test>
+	<test classname ='TC016_TeamSelectionList_RemoveCoach' testname='TC016_TeamSelectionList_removeCoach'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='firstName'>Coach</parameter>
+		<parameter name='lastName'>Red</parameter>
+		<parameter name='DOB'>13/06/2012</parameter>
+	</test>
+	<test classname ='TC017_TeamSelectionList_EditTeamColor' testname='TC017_TeamSelectionList_editTeamColor'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC018_TeamSelectionList_BackToGameList' testname='TC018_TeamSelectionList_backToGameList'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC019_TeamSelectionList_ChooseAnotherTeam' testname='TC019_TeamSelectionList_chooseAnotherTeam'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC020_GameTime_PageLoad' testname='TC020_GameTime_pageLoad'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC021_GameTime_AddScoreToPlayer' testname='TC021_GameTime_addScoreToPlayer'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>3</parameter>
+	</test>
+	<test classname ='TC022_GameTime_AddScoreToTeam' testname='TC022_GameTime_addScoreToTeam'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>3</parameter>
+	</test>
+	<test classname ='TC023_GameTime_SetTimeoutToTeam' testname='TC023_GameTime_setTimeoutToTeam'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC052_TeamSelectionList_SearchMemberWithInvalidData' testname='TC052_TeamSelectionList_searchMemberWithInvalidData'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='firstName'>Jack</parameter>
+		<parameter name='lastName'>King</parameter>
+		<parameter name='DOBMemberSearch'>12/09/2003</parameter>
+	</test>
+	<test classname ='TC053_TeamSelectionList_TapRefreshButton' testname='TC053_TeamSelectionList_tapRefreshButton'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+	</test>
+	<test classname ='TC024_GameTime_SetFoulToPlayer' testname='TC024_GameTime_setFoulToPlayer'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC025_GameTime_SetTechnicalFoulToPlayer' testname='TC025_GameTime_setTechnicalFoulToPlayer'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC026_GameTime_SetTechnicalFoulToTeam' testname='TC026_GameTime_setTechnicalFoulToTeam'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC027_GameTime_SetTechnicalFoulToCoach' testname='TC027_GameTime_setTechnicalFoulToCoach'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC028_GameTime_SetUnsportmanlikeFoulToPlayer' testname='TC028_GameTime_setUnsportmanlikeFoulToPlayer'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC029_GameTime_SetDisqualifiedFoulToPlayer' testname='TC029_GameTime_setDisqualifiedFoulToPlayer'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC030_GameTime_StartP1Clock' testname='TC030_GameTime_startP1Clock'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC031_GameTime_EditClock' testname='TC031_GameTime_editClock'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC032_GameTime_ConfirmGame' testname='TC032_GameTime_confirmGame'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC033_GameTime_InjuryReport' testname='TC033_GameTime_injuryReport'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='injuryType'>Refused Treatment</parameter>
+	</test>
+	<test classname ='TC034_GameTime_IncidentReport' testname='TC034_GameTime_incidentReport'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC035_GameTime_Forfeit' testname='TC035_GameTime_forfeit'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC036_GameTime_EditTeam' testname='TC036_GameTime_editTeam'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='editAddPlayersOfTeam1'>2</parameter>
+	</test>
+	<test classname ='TC037_GameTime_BackToGameList' testname='TC037_GameTime_backToGameList'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC038_GameTime_UndoLast' testname='TC038_GameTime_undoLast'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>3</parameter>
+	</test>
+	<test classname ='TC039_GameTime_Redo' testname='TC039_GameTime_redo'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>3</parameter>
+	</test>
+	<test classname ='TC040_GameTime_SetTwoTechnicalFoulToCoachToBeDisqualified' testname='TC040_GameTime_setTwoTechnicalFoulToCoachToBeDisqualified'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC041_GameTime_SetThreeTechnicalFoulToTeam' testname='TC041_GameTime_setThreeTechnicalFoulToTeam'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC042_GameTime_SetTwoTechnicalFoulToTeamAndOneToCoach' testname='TC042_GameTime_setTwoTechnicalFoulToTeamAndOneToCoach'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC043_ActionLog_PageLoad' testname='TC043_ActionLog_pageLoad'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC044_ActionLog_ChangePeriod' testname='TC044_ActionLog_changePeriod'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>1</parameter>
+	</test>
+	<test classname ='TC045_ActionLog_ChangeScore' testname='TC045_ActionLog_changeScore'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>1</parameter>
+	</test>
+	<test classname ='TC046_ActionLog_ChangeFoul' testname='TC046_ActionLog_changeFoul'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC047_ActionLog_ReassignScore' testname='TC047_ActionLog_reassignScore'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>1</parameter>
+	</test>
+	<test classname ='TC048_ActionLog_ReassignFoul' testname='TC048_ActionLog_reassignFoul'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC049_ActionLong_SetTimeoutAnotherTeam' testname='TC049_ActionLong_setTimeoutAnotherTeam'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+	</test>
+	<test classname ='TC050_ActionLog_UndoLastAction' testname='TC050_ActionLog_undoLastAction'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>1</parameter>
+	</test>
+	<test classname ='TC051_ActionLog_Redo' testname='TC051_ActionLog_redo'>
+		<parameter name='courtsideID'>38287</parameter>
+		<parameter name='setupID'>230788</parameter>
+		<parameter name='courtName'>SportsTG Courtside - Court 1 </parameter>
+		<parameter name='playersOfTeam1'>4</parameter>
+		<parameter name='playersOfTeam2'>4</parameter>
+		<parameter name='point'>1</parameter>
+	</test>
+</base>

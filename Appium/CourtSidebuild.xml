@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="jenkins-ci" default="exec">
+
+	<property name="src" value="./src" />
+	<property name="lib" value="./lib" />
+	<property name="bin" value="./bin" />
+	<property name="style" value="./resources/misc" />
+	<property name="resources" value="./resources" />
+	<property name="report" value="./report" />
+	<property name="archive" value="./archive" />
+	
+	<tstamp>
+		<format property='build_time' pattern='dd_MMM_yy_HH_mm_ss' />
+	</tstamp>
+	
+	<property name="testresultsfolder" value="${archive}/${build_time}" />
+	
+	<path id="test.classpath">
+		<pathelement location="${bin}" />
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="bootstrap" description="Install ivy">
+        <mkdir dir="${user.home}/.ant/lib"/>
+        <get src="http://central.maven.org/maven2/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar"
+         dest="${user.home}/.ant/lib/ivy.jar"/>
+    </target>
+
+    <target name="resolve-dependencies" description="get ivy dependencies" depends="bootstrap">
+    	<ivy:retrieve type="jar" />
+        <ivy:retrieve />
+    </target>
+    
+    <target name="init">
+		<delete dir="${bin}" />
+		<mkdir dir="${bin}" />
+		<property file="${resources}/general.properties" />
+	</target>
+
+	<target name="compile" depends="init">
+		<javac source="1.7" srcdir="${src}" fork="true" destdir="${bin}" includeantruntime="false" debug="on">
+			<classpath>
+				<pathelement path="${bin}">
+				</pathelement>
+				<pathelement path="${resources}">
+				</pathelement>
+				<fileset dir="${lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="exec" depends="resolve-dependencies, compile">
+		<delete dir="${report}" />
+		<mkdir dir="${report}" />
+		<mkdir dir="${report}/xml" />
+		<mkdir dir="${report}/images" />
+
+		<junit printsummary="yes" haltonfailure="no" failureproperty="test.failed" showoutput="true">
+			<classpath>
+				<pathelement location="${bin}" />
+				<pathelement location="${resources}" />
+				<fileset dir="${lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+			<formatter type="xml" />
+
+			<batchtest fork="yes" todir="${report}/xml">
+				<fileset dir="${src}">
+					<include name="**/*CategorySuite*.java" />
+				</fileset>
+			</batchtest>
+
+		</junit>
+
+		<junitreport todir="${report}">
+			<fileset dir="${report}/xml">
+				<include name="TEST*.xml" />
+			</fileset>
+			<report format="frames" styledir="${style}" todir="${report}/html" />
+		</junitreport>
+
+		<mkdir dir="${testresultsfolder}" />
+		<copy todir="${testresultsfolder}">
+			<fileset dir="${report}" />
+		</copy>
+		<fail message="Test failure detected, check test results." if="test.failed" />
+
+	</target>
+
+</project>

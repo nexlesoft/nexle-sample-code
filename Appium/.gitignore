@@ -1,0 +1,11 @@
+*.ori
+*.ori2
+archive
+bin
+.settings
+report
+junit*
+report/*
+build_Competition.xml
+src/com/core/test/TestRailTesting.java
+src/com/core/test/sportstg/competitions/TC000_Test.java
