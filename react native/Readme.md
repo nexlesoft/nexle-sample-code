@@ -5,11 +5,35 @@
 
 ## :arrow_up: How to Setup
 
-**Step 1:** git clone this repo:
+**Step 1:** git clone this repo
 
-**Step 2:** cd to the cloned repo:
+**Step 2:** cd to the cloned repo
 
 **Step 3:** Install libraries:
+```shell
+  npm install
+```
+
+
+## Project scaffold
+```
+-src
+  -Components       // Common UI components
+  -Config           // Application specific configuration
+  -Constants        // Constants using for entire project
+  -Containers       // Business logic for each scences
+  -Fixtures         // Mockup API response
+  -I18n             // Localization
+  -Images           // Images folder
+  -Navigation       // Navigation config
+  -Redux            // All redux(actions, reducers) are stored and organized here
+  -Sagas            // All sagas are stored and organized here
+  -Services         // API Services
+  -Themes           // Application specific themes
+  -Utils            // All utilities are stored and organized here
+-index.js           // entry file
+```
+
 
 ## Librarires in project
 
